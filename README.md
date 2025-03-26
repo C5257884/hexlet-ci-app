@@ -1,7 +1,6 @@
 # Example app for CI Hexlet course
 
-[![github action status](https://github.com/C5257884/hexlet-ci-app/workflows/Java%20CI/badge.svg)](https://github.com/C5257884/hexlet-ci-app/actions)
-
+[![github-actions](https://github.com/C5257884/hexlet-ci-app/actions/workflows/wf_actions.yml/badge.svg)](https://github.com/C5257884/hexlet-ci-app/actions/workflows/wf_actions.yml)
 Starting boilerplate of [Strapi](https://strapi.io/) application
 
 ## System requirements
