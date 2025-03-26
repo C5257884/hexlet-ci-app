@@ -1,0 +1,20 @@
+name: github-actions
+
+on: push
+jobs:
+  # build – произвольно выбранное имя задания
+  # их может быть больше одного
+  build:
+    # операционная система для работы воркфлоу
+    runs-on: ubuntu-latest
+    steps: # список шагов, которые надо выполнить
+      # run – произвольная bash-команда
+      # Клонируем репозиторий
+      - uses: actions/checkout@v4
+      # Устанавливаем Node.js
+      - uses: actions/setup-node@v4
+      # Ставим зависимости
+      - run: npm install
+      - run: make setup
+      - run: make test
+      - run: make lint
